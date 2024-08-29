@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>EGG (Early Growth Genetics) Consortium</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Main CSS" charset="utf-8">
+</head>
+<body>
+
+<div class="wrapper">
+
+	<div class="branding">
+		<img src="egg_75.png">
+		<h1>Early Growth Genetics Consortium</h1>
+	</div>
+	
+	<div class="navigation">
+		<a href="index.html">Home</a>
+	</div>
+
+	<div class="content">
+	
+	<h1>Placental Weight Summary Data (2023)</h1>
+	
+	<p>We are releasing the summary data from our genome-wide meta-analyses of placental weight, combining data from 21 (fetal genotype), 16 (maternal genotype) and 6 (paternal genotype) studies participating in the EGG consortium. Most studies were imputed to the Haplotype Reference Consortium version r1.1 panel, while a small number were imputed using either 1000 Genomes or bespoke reference panels of European similarity. </p>
+	
+	<p>A total of 6 genome-wide association meta-analyses were conducted (see paper for full details; reference is below):</p>
+	<ol>
+		<li><p>Fetal GWAS of placental weight, adjusted for fetal sex and gestational duration</p></li>
+		<li><p>Maternal GWAS of placental weight, adjusted for fetal sex and gestational duration</p></li>
+		<li><p>Paternal GWAS of placental weight, adjusted for fetal sex and gestational duration</p></li>
+		<li><p>Fetal GWAS of placental weight, adjusted for fetal sex only</p></li>
+		<li><p>Maternal GWAS of placental weight, adjusted for fetal sex only</p></li>
+		<li><p>Paternal GWAS of placental weight, adjusted for fetal sex only</p></li>
+	</ol>
+	
+	<p>All placental weight measures were z-score transformed prior to analysis. The association between each genetic variant and placental weight was tested using linear regression or linear mixed models, with adjustment for offspring sex and gestational duration (analyses 1-3) or offspring sex only (analyses 4-6) and study specific covariates (e.g. ancestry principal components where appropriate).</p>
+
+	<p>As the fetal genotype is correlated with both the maternal and paternal genotypes, we applied a weighted linear model (WLM) to adjust the effect estimates from analyses 1 to 3 above. We applied this in two different ways. Firstly setting paternal effects to 0, allowing only maternal and fetal effects, and secondly allowing for non-zero paternal genetic effects. The file contains the following effect estimates (with standard errors):</p>
+
+	<ol>
+		<li><p>Fetal effect 1: this is the individual's own genetic effect on their own placental weight, after adjusting for the correlated maternal genotype</p></li>
+		<li><p>Maternal effect 1: this is the mother's genetic effect on placental weight, after adjusting for the correlated fetal genotype</p></li>
+		<li><p>Fetal effect 2: this is the individual's own genetic effect on their own placental weight, after adjusting for the maternal and paternal genotypes</p></li>
+		<li><p>Maternal effect 2: this is the mother's genetic effect on placental weight, after adjusting for the fetal and paternal genotypes</p></li>
+		<li><p>Paternal effect: this is the father's genetic effect on placental weight, after adjusting for the fetal and maternal genotypes</p></li>
+	</ol>
+	
+	<p>Summary files provide information on chromosome, genomic position (NCBI build 37), rsID, effect allele, other allele, effect allele frequency, beta, standard error, P value, heterogeneity P value and sample size at approximately 11 million variants passing quality control.</p>
+	
+	
+	<h2>Dataset Details</h2>
+	<p>We have seven sets of summary files:</p>
+	
+	
+	<ol>
+	<li><p>European-only meta-analysis of plcental weight vs. fetal genotype adjusted for sex and gestational duration in up to 65,405 individuals; the data as a gzipped text file can be downloaded <a href="./PW/pw_fetal_sex_gest.gz">here</a>.</p></li>
+	<li><p>European-only meta-analysis of placental weight vs. maternal genotype adjusted for sex and gestational duration in up to 61,228 individuals; the data as a gzipped text file can be downloaded <a href="./PW/pw_maternal_sex_gest.gz">here</a>.</p></li>
+	<li><p>European-only meta-analysis of placental weight vs. paternal genotype adjusted for sex and gestational duration in up to 52,392 individuals; the data as a gzipped text file can be downloaded <a href="./PW/pw_paternal_sex_gest.gz">here</a>.</p></li>
+	<li><p>European-only meta-analysis of plcental weight vs. fetal genotype adjusted for sex only in up to 65,405 individuals; the data as a gzipped text file can be downloaded <a href="./PW/pw_fetal_sex.gz">here</a>.</p></li>
+	<li><p>European-only meta-analysis of placental weight vs. maternal genotype adjusted for sex and only in up to 61,228 individuals; the data as a gzipped text file can be downloaded <a href="./PW/pw_maternal_sex.gz">here</a>.</p></li>
+	<li><p>European-only meta-analysis of placental weight vs. paternal genotype adjusted for sex and only in up to 52,392 individuals; the data as a gzipped text file can be downloaded <a href="./PW/pw_paternal_sex.gz">here</a>.</p></li>
+	<li><p>European-only meta-analysis of placental weight from analyses 1-3 above, plus WLM adjusted effects both allowing non-zero paternal effects (columns indiccated by "wlm"), and setting paternal effects to 0 (columns indicated by "wlm pair") <a href="./PW/wlm_sex_gest_plus_p.gz">here</a></p></li>
+	</ol>
+	
+	<h2>Acknowledging The Data</h2>
+	
+	<p>When using data from the downloadable meta-analyses results please acknowledge the source of the data as follows:</p>
+	<p class="quote">Data on placental weight has been contributed by the EGG Consortium using the UK Biobank Resource and has been downloaded from www.egg-consortium.org</p>
+	<p>In addition to the above acknowledgement, please cite the paper below:</p>
+
+<div class="citation">
+	<p class="title">Genome-wide association study of placental weight identifies distinct and shared genetic influences between placental and fetal growth</p>
+	<p class="authors">Beaumont RN, Flatley C, Vaudel M et al.</p>
+	<p class="reference">Nature Genetics 2023 doi:</p>
+</div>
+
+<br/><br/><br/><br/><br/>
+</div><!-- End of Content -->
+</div><!-- End of Wrapper -->
+</body>
+</html>
+
+

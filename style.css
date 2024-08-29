@@ -1,0 +1,133 @@
+body {
+	padding: 30px 0;
+	margin: 0;
+	font-family: Helvetica, Calibri;
+	font-size: 95%;
+	color: #111111;
+}
+
+div.wrapper {
+	width: 800px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+div.branding {
+	margin: 0 0 20px 0;
+	padding: 10px 0 10px 0;
+	border: 3px solid #FCFCFC;
+}
+
+div.branding img {
+	display: block;
+	margin: 0 auto 0 auto;
+}
+
+div.branding h1 {
+	font-family: Century Gothic;
+	font-weight: lighter;
+	font-size: 32pt;
+	margin: 0 0 0 0;
+	text-align: center;
+}
+
+h2 {
+	font-family: Century Gothic;
+	font-weight: lighter;
+	font-size: 18pt;
+	margin: 30px 0 10px 0;
+	text-align: left;
+}
+
+
+
+div.navigation a{
+	padding: 5px 10px;
+	background-color: lightgrey;
+	color: white;
+}
+
+div.content {
+	width: 800px;
+	float: right;
+	margin: 0 0 250px 0;
+	text-align: justify;
+}
+
+p.quote {
+	margin: 0 40px 0 40px;
+	font-style: italic;
+}
+
+div.citation {
+	font-family: monospace;
+	font-size: 110%;
+}
+
+div.citation p.title {
+	margin: 0 40px 5px 40px;
+	font-weight: bold;
+}
+
+div.citation p.authors {
+	margin: 0 40px 5px 40px;
+	font-style: italic;
+}
+
+div.citation p.reference {
+	margin: 0 40px 0 40px;
+}
+
+
+a {
+	text-decoration: none;
+	color: #999999;
+}
+
+a:hover {
+	color: orange;
+	text-decoration: underline;
+}
+
+ol li {
+	padding-left: 10px;
+}
+
+ul li {
+	padding: 5px;
+}
+
+ul.downloads li {
+	padding: 5px;
+}
+
+div.analysis_section {
+	border: 3px solid #FCFCFC;
+	padding: 3px;
+	margin: 10px 0px 0px 0px;
+}
+
+div.analysis_section h3 {
+	font-family: Century Gothic;
+	font-weight: lighter;
+	font-size: 12pt;
+	margin: 6px 3px 6px 3px;
+	text-align: left;
+}
+
+div.analysis_section table {
+	font-size: 9pt;
+	margin: 0;
+    border-collapse: collapse;
+}
+
+div.analysis_section table  tr th{
+	background-color: #FCFCFC;
+    font-weight: bold;
+}
+
+div.analysis_section table  tr th, div.analysis_section table  tr td {
+    text-align: left;
+    vertical-align: top;
+    padding: 5px 5px 5px 5px;
+}
